@@ -107,3 +107,37 @@ def get_greeting():
 - False
 23. None == -1.5
 - False
+
+# A Pilha de Chamada
+## A piha de chamadas é a forma como o Python registra para onde retornar a execução após cada chamada de função. A pilha de chamadas não fica armazenada em uma variável do seu programa; em vez disso, ela é uma seção da memória do computador que o Python gerencia automaticamente nos bastidores. Quando o programa chama uma função, o Python cria um objeto de quadro (*frame object*) no topo da pilha de chamadas. Esses objetos de quadro armazenam o número da linha da chamada de função original, permitindo que o Python saiba para onde retornar. Responda às perguntas a seguir sobre os objetos de quadro, a pilha de chamadas e as chamadas de função.
+
+24. O que representa um objeto de quadro de pilha?
+- O número da linha onde houve a chamada de função para que o Python se lembre para onde voltar
+25. Quando um objeto de quadro de pilha é adicionado ao topo da pilha de chamadas?
+- Quando uma nova chamada de função é realizada
+26. Quando um objeto de quadro de pilha é removido do topo da pilha de chamadas?
+- Quando o corre o retorno da chamada de função
+27. O que representa o objeto de quadro de pilha no topo da pilha de chamadas?
+- A função atualmente sendo executada
+28. Uma chamada para uma função chamada spam() é feita. Em seguida, uma chamada para a função eggs() é feita. Depois, eggs() retorna. Após isso, uma chamada para a função bacon() é feita. Como fica a pilha de chamadas neste ponto?
+- spam() | eggs() | spam() | bacon() |
+---------| spam() | ------ |  spam() |
+------------------------------------ |
+29. Um programa não possui absolutamente nenhuma chamada de função. Como fica a pilha de chamadas enquanto o programa está em execução?
+- Vazia
+
+# Escopos Locais e Globais
+## Apenas o código dentro de uma função chamada pode acessar os parâmetros e as variáveis ​​atribuídos nessa função. Diz-se que essas variáveis ​​existem no escopo local daquela função. Em contrapartida, o código em qualquer parte de um programa pode acessar variáveis ​​atribuídas fora de todas as funções. Diz-se que essas variáveis ​​existem no escopo global. Responda às perguntas a seguir sobre variáveis ​​globais, variáveis ​​locais e escopos.
+
+30. Os parâmetros de função são variáveis ​​globais ou locais?
+- Variáveis locais
+31. Uma variável em uma função é marcada com a instrução `global`. Ela é uma variável global ou local?
+- Ela é uma variável global
+32. Uma variável pode ser, ao mesmo tempo, global e local?
+- Não
+33. Se existir uma variável global `spam` e uma função contiver uma instrução de atribuição `spam = 42` (sem uma instrução `global spam`), a variável `spam` dentro da função será local ou global?
+- Local
+34. Se existir uma variável global `spam` e uma função contiver uma instrução de atribuição `spam = 42` e também uma instrução `global spam`, a variável `spam` dentro da função será local ou global?
+- Global
+35. Se existir uma variável global `spam` e uma função nunca atribuir um valor a `spam` nem contiver uma instrução `global spam`, mas utilizar a variável `spam` (por exemplo, em `print(spam)`), a variável `spam` dentro da função será local ou global?
+- Global
