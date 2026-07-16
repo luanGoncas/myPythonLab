@@ -141,3 +141,101 @@ def get_greeting():
 - Global
 35. Se existir uma variável global `spam` e uma função nunca atribuir um valor a `spam` nem contiver uma instrução `global spam`, mas utilizar a variável `spam` (por exemplo, em `print(spam)`), a variável `spam` dentro da função será local ou global?
 - Global
+
+## Muitos erros ocorrem porque os programadores identificam erroneamente o escopo no qual uma variável existe. Para testar se você compreende corretamente as regras de escopo do Python, determine qual é a saída de cada um dos programas a seguir.
+
+36.
+
+def func(spam):
+    print(spam)
+spam = 'dog'
+func('cat')
+
+- cat
+
+37.
+
+def func(eggs):
+    print(spam)
+spam = 'dog'
+func('cat')
+
+- dog
+
+38.
+
+def func():
+    spam = 'cat'
+spam = 'dog'
+func()
+print(spam)
+
+- dog
+
+39.
+
+def func():
+    global spam
+    spam = 'cat'
+spam = 'dog'
+func()
+print(spam)
+
+- cat
+
+40.
+
+def func():
+    global spam
+    print(spam)
+    spam = 'cat'
+spam = 'dog'
+func()
+
+- dog
+
+41.
+
+def func():
+    print(spam)
+    spam = 'cat'
+spam = 'dog'
+func()
+
+- Erro
+
+# Tratamento de Exceções
+## Normalmente, a ocorrência de um erro — ou exceção — em um programa Python faz com que todo o programa trave. No entanto, programas também podem lidar com erros utilizando as instruções `try` e `except`. O código que pode apresentar um erro é colocado em uma cláusula `try`. Se ocorrer um erro, a execução do programa passa para o início da cláusula `except` subsequente. Para cada um dos programas a seguir, determine se o programa travaria caso o usuário digitasse algo que não fosse um número.
+
+42.
+
+print('Enter a number:')
+number = int(input())
+try:
+    print('You entered a number.')
+except:
+    print('You did not enter a number.')
+
+- Travaria, porque o código não está dentro da cláusula try
+
+43.
+
+print('Enter a number:')
+try:
+    number = int(input())
+    print('You entered a number.')
+except ValueError:
+    print('You did not enter a number.')
+
+- Não travaria
+
+44.
+
+print('Enter a number:')
+try:
+    number = int(input())
+    print('You entered a number.')
+except ZeroDivisionError:
+    print('You did not enter a number.')
+
+- Travaria devido a exceção utilizada
