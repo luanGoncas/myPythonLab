@@ -22,3 +22,18 @@ def multiply(number1, number2):
         total_product = add(total_product, start)
     
     return total_product
+
+while True:
+    try:
+        first_number = int(input('Enter the first number: '))
+        second_number = int(input('Enter the second number: '))
+
+        if first_number < 0 or second_number < 0:
+            print('Please, enter a positive number...')
+            continue
+        else:
+            print('Add: ', add(first_number, second_number))
+            print('Multiply:', multiply(first_number, second_number))
+            break
+    except ValueError:
+        print('Please, I need you to enter a valid number...')
