@@ -61,3 +61,28 @@ print('Hello,', name)
 
 8. O que o `assert False` faz?
 - Dispara a exceção AssertionError na tela
+
+# Logging
+## O uso de logs é uma ótima maneira de entender o que está acontecendo no seu programa e em que ordem. O módulo `logging` do Python facilita a criação de registros com mensagens personalizadas que você mesmo escreve.
+
+9. Alice escreve um programa com várias chamadas `print()` para exibir informações de depuração, em vez de utilizar o módulo `logging`. Após terminar a programação, ela começa a remover essas chamadas `print()`. Quais são dois possíveis erros que ela poderia cometer ao removê-las?
+- Alice pode cometer o erro de remover chamadas de print() que não eram para mensagens de log, além do tempo levado para remover todas elas
+
+## Para cada um dos eventos a seguir, decida qual nível de registro usar para a mensagem de log correspondente. (Essas escolhas podem ser subjetivas e podem ter várias respostas aceitáveis.)
+
+10. Um erro causa uma falha que faz o programa travar sem possibilidade de recuperação.
+- logging.critical()
+11. Uma função específica do seu programa, `calculate_my_result()`, é chamada.
+- logging.debug()
+12. O programa registra o valor de uma variável específica.
+- logging.info()
+13. O usuário solicita que o programa abra um arquivo, mas o arquivo não existe.
+- logging.error()
+14. O programa detecta que um cálculo está incorreto, mas consegue continuar a ser executado.
+- logging.warning()
+15. O programa inicia a execução e precisa registrar a data e a hora em que foi iniciado.
+- logging.info()
+16. O programa controla quantas vezes um laço `while` foi executado antes de ser encerrado.
+- logging.debug()
+17. O programa registra a string que o usuário digitou para uma chamada da função `input()`.
+- logging.debug()
