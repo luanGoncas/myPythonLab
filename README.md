@@ -13,3 +13,4 @@ Repositório dedicado ao estudo aprofundado da linguagem Python, focado em lógi
 * **[Capítulo 02 - If Else e Controle de Fluxo](./2%20-%20if_else_flow_control/)**: Operadores booleanos, blocos de código e condições .
 * **[Capítulo 03 - Loops](./3%20-%20loops/)**: Loops (`while`, `for`) e importação de módulos
 * **[Capítulo 04 - Funções](./4%20-%20functions)**: Criação de funções, escopos locais e global, pilha de chamada, e tratamento de exceções
+* **[Capítulo 05 - Debugging](./5%20-%20debugging)**: Depuração, tratamento de erros, asserções e logging
