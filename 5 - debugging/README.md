@@ -23,7 +23,7 @@ Uma asserção é uma verificação de segurança interna feita pelo programador
 
 ### 🎯 Características Principais
 * **Erros de Programador:** Enquanto exceções tratam erros do usuário, asserções tratam erros do próprio código.
-* **Falha Rápida (Fail Fast):** Descobre bugs imediatamente, reduzindo o tempo necessário para encontrar a causa de um erro.
+* **Falha Rápida (*Fail Fast*):** Descobre bugs imediatamente, reduzindo o tempo necessário para encontrar a causa de um erro.
 * **Sintaxe:** `assert` [condição], 'Mensagem se for Falso'
 * **Desativação:** Podem ser desativadas ao executar o Python com a flag -O na linha de comando.
 

@@ -14,3 +14,7 @@ Repositório dedicado ao estudo aprofundado da linguagem Python, focado em lógi
 * **[Capítulo 03 - Loops](./3%20-%20loops/)**: Loops (`while`, `for`) e importação de módulos
 * **[Capítulo 04 - Funções](./4%20-%20functions)**: Criação de funções, escopos locais e global, pilha de chamada, e tratamento de exceções
 * **[Capítulo 05 - Debugging](./5%20-%20debugging)**: Depuração, tratamento de erros, asserções e logging
+
+## ⚠️ Observações
+
+- O capítulo 5 foi adaptado de forma a não tratar a parte envolvendo o depurador do Mu, IDE utilizada pelo autor, Al Sweigart. Os tópicos de depuração foram adaptados para uso dentro do **Visual Studio Code**
