@@ -90,9 +90,9 @@
 36. 'Forgot the closing quote
 - Erro de sintaxe por não fechar as aspas simples da string
 37. 'Hello' * 3.0
-- Correta
+- Erro por operação inválida entre string e float
 38. 'Hello' + 3
-- Erro de sintaxe por não ser possível utilizar o operador + com um valor de string e outro valor inteiro
+- Erro de tipagem por não ser possível utilizar o operador + com um valor de string e outro valor inteiro
 39. Hello + Hello + Hello
 - Erro por não ter definido uma variável chamada 'Hello'
 40. 'Alice' * 'Bob'
