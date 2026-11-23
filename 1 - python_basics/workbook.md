@@ -17,7 +17,7 @@
 7. Floor division
 - [//]
 8. Existe alguma diferença na forma como o Python interpreta estas duas expressões? 2 + 2 e 2     + 2
-- Não, não há. Espaços não fazem diferença na hora de comprar uma expressão
+- Não, não há. Espaços não fazem diferença na hora de comparar uma expressão
 9. Se a expressão 26 / 8 resulta em 3,25, qual é o resultado da expressão 26 // 8?
 - 3
 10. 26 dividido por 8 é igual a 3 com resto 2. Qual é o resultado da expressão 26 % 8?
